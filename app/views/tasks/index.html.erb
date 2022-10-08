@@ -1,0 +1,9 @@
+<h1>This is a test</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <input type="checkbox" name="<%= task.title.downcase %>" />
+      <%= task.title %>
+    </li>
+  <% end %>
+</ul>
