@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get 'tasks', to: 'tasks#index', as: :tasks
   get 'tasks/:id', to: 'tasks#details', as: :task
   get 'new', to: 'tasks#new', as: :new
+  post 'new', to: 'tasks#create', as: :create
 end
